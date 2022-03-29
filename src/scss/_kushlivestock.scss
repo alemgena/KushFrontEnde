@@ -1,0 +1,243 @@
+.kush-home-top {
+    // border: 1px solid red;
+    margin: 2.5em 0;
+    .kush-categories {
+      // border:2px solid $lightgray;
+      width: 90%;
+      margin: auto;
+
+      // padding: 0.5em 0.3em;
+      .header {
+        font-weight: bold;
+        color: white;
+        // margin: 0.5em;
+        // border:1px solid red;
+        padding: 0.5em;
+        text-transform: uppercase;
+        background-color: $color7;
+
+        border-bottom: 2px solid $color7;
+      }
+      .content {
+        border: 2px solid $lightgray;
+        .category-item {
+          // border:1px solid red;
+          padding: 0.5em;
+          cursor: pointer;
+          &:hover {
+            background-color: rgb(245, 245, 245);
+          }
+        }
+
+        padding: 0.5em 0.3em;
+      }
+    }
+    .kush-home-right {
+      // border:1px solid red;
+      .links {
+        // border:1px solid red;
+        display: flex;
+        justify-content: space-around;
+        .link {
+          // border:1px solid red;
+          padding: 0.4em;
+          margin: 0 0.4em;
+          color: black;
+          font-size: 1.1em;
+          color: rgb(80, 80, 80);
+          font-weight: bold;
+          letter-spacing: 2px;
+        }
+      }
+      .vertical-links {
+        flex-direction: column;
+      }
+    }
+  }
+  .kush-brands {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 4em auto;
+    // border:1px solid red;
+    // overflow-x: scroll;
+    border-top: 1px solid $lightgray;
+    border-bottom: 1px solid $lightgray;
+    flex-shrink: 0;
+
+    justify-content: center;
+    // scroll-behavior: smooth;
+
+    // justify-content: center;
+    .icon {
+      color: $lightgray;
+      transition: color 0.34s ease-in-out;
+      // border:1px solid red;
+      padding: 1.41em;
+      cursor: pointer;
+      &:hover {
+        color: #666;
+      }
+    }
+    .content {
+      @include hideScrollbar();
+      scroll-behavior: smooth;
+      display: flex;
+      // border:1px solid green;
+      overflow-x: scroll;
+      flex-shrink: 0;
+      max-width: 90%;
+      .brand-item {
+        // border:1px solid red;
+        margin: 1em 3em;
+        min-width: 250px;
+        // width:90%;
+      }
+    }
+  }
+  .kush-home-bottom {
+    margin: 3em 0;
+    .left {
+      border-right: 1px solid $lightgray;
+      .kush-testimonials {
+        width: 90%;
+        margin: auto;
+        .testimonial {
+          // border:1px solid red;
+          .name {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 0.6em 0;
+            // width: max-content;
+            // border-bottom: 1px solid $color7;
+            color: $color7;
+          }
+          .content {
+            // border:1px solid red;
+            padding: 0.7em 0;
+            font-size: 1.1em;
+          }
+        }
+        .navigation {
+          // border: 1px solid red;
+          display: flex;
+          justify-content: center;
+          margin: 1.6em 0;
+          // padding:2em;
+          .nav-item {
+            width: 14px;
+            height: 14px;
+            padding: 3px;
+            cursor: pointer;
+            border-radius: 50%;
+
+            background: $lightgray;
+
+            margin: 0.4em;
+          }
+          .nav-item-active {
+            background: $color7;
+          }
+        }
+      }
+    }
+    .right {
+      .kush-newsletter {
+        width: 90%;
+        margin: auto;
+        .header {
+          // color:#666;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: 1.2em;
+        }
+        .subscribe {
+          margin: 1.5em 0;
+          .subscribe-box {
+            .search-bar {
+              // width: 500px;
+
+              //  border:1px solid red;
+              background: #ffd699;
+              display: flex;
+              align-items: center;
+              border-radius: 25px;
+              background-color: $lightgray;
+              .input-outer {
+                // border:1px solid red;
+                width: 100%;
+                height: 100%;
+                background-color: $lightgray;
+
+                border-radius: 25px;
+                align-items: center;
+                .input {
+                  // border:1px solid green;
+                  width: 100%;
+                  height: 100%;
+                  margin: 0;
+                  border-radius: 25px;
+                  background: #ffeed4;
+                  border: none;
+                  background-color: $lightgray;
+
+                  outline: 0;
+                  padding: 0.55em 1em;
+                }
+                .clear {
+                  padding: 0 0.7em;
+                  opacity: 0.8;
+                  font-weight: bold;
+                  cursor: pointer;
+                  font-size: 1.4em;
+                  &:hover {
+                    opacity: 1;
+                  }
+                }
+              }
+
+              .button {
+                cursor: pointer;
+                // border: 1px solid green;
+                // width: 100%;
+                height: 100%;
+                margin: 0;
+                border-radius: 25px;
+                background: #ffeed4;
+                border: none;
+                outline: 0;
+                color: white;
+                background: $color7;
+                padding: 0.55em 1.5em;
+              }
+            }
+            &:focus {
+              margin: 10em;
+            }
+          }
+        }
+        .follow {
+          .follow-us {
+            display: flex;
+            align-items: center;
+            .text {
+              margin-right: 1em;
+            }
+            .icons {
+              display: flex;
+              .icon-item {
+                margin: 0.2em;
+                padding: 0.2em;
+                cursor: pointer;
+                transition: color 0.25s ease-in-out;
+                // border:1px solid red;
+                &:hover {
+                  color: $color7;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,149 @@
+/*---------------------Navigation Menus and Image Slider for Home top-------------------- */
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+.back{
+    background-color: tomato;
+}
+
+
+
+.nav-link{
+    padding: 1cm;
+    width: 4.5cm;
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+    
+    
+}
+
+/* .link:hover{
+    color:rgb(248, 244, 244);
+    background: white;
+    transform: scale(1.2);
+    transition-duration: 01s;
+    box-shadow: -10px 30px 20px rgb(198, 211, 211);
+
+} */
+.link{
+     background-color: rgb(151, 39, 39);
+    /* box-shadow: 30px 30px 20px rgb(198, 211, 211); */
+    border-radius: 0.2cm;
+    color:white;
+    background-color: white;
+    
+}
+.menu{
+    /* box-shadow: 30px 30px 20px rgb(139, 68, 68); */
+    background-color: rgb(155, 25, 25);
+    color:white;
+}
+
+.bottom{
+    padding-top: 0.3cm;
+    
+}
+
+.welcometitle{
+    display: flex;
+    padding-top: 40px;
+    border-color:cornflowerblue;
+    text-indent: 50mm;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    opacity: 70%;
+    text-decoration: cornflowerblue;
+    text-shadow: crimson;
+    /* box-shadow: crimson; */
+    text-decoration: underline;
+    font-family: Copperplate, Papyrus, fantasy ;
+}
+/* h2:hover{
+    opacity: 100%;
+} */
+
+p{
+    color:balck;
+    background: rgba(0,0,0,0.5);
+    text-indent: 5mm;
+    line-height: 1cm;
+    text-decoration-color: yellow;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+    padding-right: 2cm;
+    padding-left: 2cm;
+    font-size: 20px;
+    text-shadow: violet;
+    opacity: 0.0 - 1.0;
+    
+
+}
+.box{
+    box-shadow: -30px 30px 20px rgb(198, 211, 211);
+}
+.box h2{
+    color:rgb(88, 58, 53);
+}
+
+.dropdown-item{
+    color:white;
+}
+
+h3{
+    font-size: 25px;
+    background: rgba(0,0,0,0.5);
+}
+
+/*   Registration button on Home Image Slider */
+
+.regbutton {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #910c0c;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+  }
+  
+  .regbutton:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  .regbutton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .regbutton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .regbutton:hover span {
+    padding-right: 25px;
+  }
+  
+  .rebutton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

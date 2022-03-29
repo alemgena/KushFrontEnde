@@ -1,0 +1,21 @@
+.abox{
+    border-radius: 2cm;
+    padding-left: 2cm;
+    display: flex;
+    border-style: none;
+    background-color: rgb(207, 207, 204);
+    height:1cm;
+}
+
+.subbtn{
+    background-color: rgb(172, 42, 37);
+    color:white;
+    border-radius: 2cm;
+    width:3cm;
+    height: 1cm;
+    border-style: none;  
+}
+
+.abox:focus, input:focus { 
+    outline: none !important;
+}

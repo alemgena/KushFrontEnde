@@ -1,0 +1,330 @@
+.yehagere-nav {
+  background-image: url("../images/YH-web-_-homepage_slider.png");
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  // border:1px solid green;
+  // height: 70vh;
+  // border:1px solid red;
+  .toggle-button {
+    cursor: pointer;
+    color: white;
+  }
+  .top {
+    flex: 1;
+    // border:1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    .logo {
+      img {
+        height: 70px;
+      }
+    }
+    .right {
+      display: flex;
+      align-items: flex-start;
+      margin: 0.5em 0;
+      // border: 1px solid red;
+      .links {
+        // border:1px solid red;
+        display: flex;
+        color: white;
+
+        .link-item {
+          margin: 0.1em 2em 0.1em 0;
+          padding: 0.4em;
+          cursor: pointer;
+        }
+      }
+      .icons {
+        // border:1px solid red;
+
+        @include flex;
+        .icon {
+          position: relative;
+          color: white;
+
+          margin: 0.1em;
+          padding: 0.4em;
+          cursor: pointer;
+          transition: transform 0.13s ease-in-out;
+          .badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            border: 1px solid black;
+            padding: 0;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            background: black;
+            color: white;
+            font-size: 0.65em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          &:hover {
+            color: white;
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+  .center {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    // border:1px solid red;
+    .center-inner {
+      text-align: center;
+      p {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+.yehagere-mobile-icons {
+  display: flex;
+  padding: 0.331em 0;
+  .icons {
+    @include flex;
+    .icon {
+      position: relative;
+      color: $color7;
+      margin: 0.1em;
+      padding: 0.8em;
+      cursor: pointer;
+      transition: transform 0.13s ease-in-out;
+      .badge {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 1px solid black;
+        padding: 0;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        background: black;
+        color: white;
+        font-size: 0.65em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &:hover {
+        color: $color8;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+.yehagere-nav-content {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+
+  .nav-item {
+    padding: 0.751em;
+    //  border-bottom:1px solid #ddd;
+    color: #666;
+    cursor: pointer;
+    a {
+      text-decoration: none;
+      color: #666;
+      width: 100%;
+    }
+    &:hover {
+      background: rgb(241, 241, 241);
+    }
+  }
+}
+.yehagere-home {
+  .yehagere-title {
+    margin: auto;
+    // border:1px solid red;
+    display: flex;
+    justify-content: center;
+    .back {
+      color: $color9;
+      text-transform: uppercase;
+      font-size: 4rem;
+      position: relative;
+      // border:1px solid green;
+      width: max-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      .front {
+        visibility: hidden;
+        position: absolute;
+        // border:1px solid red;
+
+        color: $color10;
+        font-size: 0.7em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: initial;
+        top: -4px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .yehagere-categories {
+    margin: 6em 0;
+    padding: 1em;
+    // border:1px solid green;
+
+    .category {
+      margin: 2em auto;
+      border: 1px solid $color9;
+      padding: 0.6em;
+      width: 240px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      // width:max-content;
+      position: relative;
+      align-items: center;
+      .image {
+        // border:1px solid green;
+        z-index: 100;
+        top: -25px;
+        left: 20px;
+        position: absolute;
+        img {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+        }
+      }
+      .empty {
+        height: 200px;
+      }
+      .name {
+        font-weight: bold;
+        font-size: 1.25em;
+        color: $color10;
+      }
+      .yehagere-btn {
+        margin-top: 0.5em;
+      }
+      .second-border {
+        position: absolute;
+        border: 1px solid $color9;
+        z-index: -10;
+        top: -3px;
+        left: -3px;
+        width: 244px;
+        height: 304px;
+        transform: rotate(-3deg);
+      }
+    }
+  }
+  .popular-items {
+    .popular-title {
+      font-size: 1.4em;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $color10;
+      // border:1px solid green;
+      margin: 0.5em 0 1.8em 0;
+    }
+  }
+  .our-story {
+    height: 400px;
+    padding: 1em;
+    background: #fcf8f7;
+  }
+  .testimonials {
+    padding: 1em;
+    .content {
+      margin: 2em 1em;
+      .testimonial-item {
+        width: 90%;
+        margin: 1em auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 1em;
+        border-radius: 10px;
+        min-height: 300px;
+        align-items: center;
+        text-align: center;
+        box-shadow: 0 0 10px #ccc;
+        .name {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .our-shop {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    background-image: url("../images/YH-web-_-homepage_location.png");
+    background-size: cover; /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+    .left {
+      width: 300px;
+      height: 400px;
+      margin-left: 2%;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      .our-shop-title {
+        color: $color10;
+        font-weight: bold;
+        font-size: 1.3em;
+        text-transform: uppercase;
+      }
+      .time-address {
+        text-align: center;
+        .address {
+          margin-top: 1em;
+        }
+      }
+      .yehagere-btn2 {
+        border: 1px solid $color10;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $color10;
+      }
+    }
+  }
+}
+.yehagere-btn {
+  background: $color10;
+  color: white;
+  // margin-top: 0.5em;
+  // padding: 5px;
+  border-radius: 10px;
+  text-transform: uppercase;
+
+  cursor: pointer !important;
+  &:hover {
+    background: $color8;
+    z-index: 400;
+    color: white;
+  }
+}
